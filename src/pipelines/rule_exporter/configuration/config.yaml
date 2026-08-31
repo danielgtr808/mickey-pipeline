@@ -1,6 +1,24 @@
 dv:
   source:
+    # _type: mongodb
+    # auth:
+    #   _type: explicit
+    #   host: cluster0.qw3lamc.mongodb.net
+    #   password: ILVKTjnxYvYOd2xX
+    #   username: danielbaquini_db_user
+    # data:
+    #   audience:
+    #     database: experimentacao
+    #     collection: audience
+    #   requests:
+    #     database: experimentacao
+    #     collection: requests
+    #   rules:
+    #     database: experimentacao
+    #     collection: rules
     _type: catalog
+    auth:
+      _type: explicit
     data:
       audience:
         data_layer: ucs_db
@@ -13,6 +31,11 @@ dv:
         data_name: rules
   target:
     _type: mongodb
+    auth:
+      _type: explicit
+      host: cluster0.qw3lamc.mongodb.net
+      password: ILVKTjnxYvYOd2xX
+      username: danielbaquini_db_user
     data:
       audience:
         database: experimentacao
