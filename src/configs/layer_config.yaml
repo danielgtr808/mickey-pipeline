@@ -1,0 +1,12 @@
+# Base configuration with anchor
+.base_config: &base_config
+  ddm_db: subject.pipeline_ddm
+  tgt_db: subject.pipeline_tgt
+  ucs_db: subject.pipeline_ucs
+  wks_db: subject.pipeline_wks
+
+# Environments using the base config
+dv: *base_config
+ho: *base_config
+pr: *base_config
+xp: *base_config

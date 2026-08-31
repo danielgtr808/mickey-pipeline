@@ -1,0 +1,29 @@
+dv:
+  source:
+    _type: catalog
+    data:
+      audience:
+        data_layer: ucs_db
+        data_name: audience
+      requests:
+        data_layer: ucs_db
+        data_name: requests
+      rules:
+        data_layer: ucs_db
+        data_name: rules
+  target:
+    _type: mongodb
+    data:
+      audience:
+        database: experimentacao
+        collection: audience
+      requests:
+        database: experimentacao
+        collection: requests
+      rules:
+        database: experimentacao
+        collection: rules
+
+ho:
+
+pr:

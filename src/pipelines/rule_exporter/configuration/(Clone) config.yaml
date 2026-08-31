@@ -1,0 +1,25 @@
+dv:
+  export:
+    _type: catalog
+    # auth:
+    #   _type: explicit
+
+  processing:
+    targets:
+      selected_audience:
+        data_layer: ucs_db
+        data_name: selected_audience
+
+  requests:
+    _type: catalog
+    sources:
+      requests:
+        data_layer: ucs_db
+        data_name: requests
+      rules:
+        data_layer: ucs_db
+        data_name: rules
+
+ho:
+
+pr:
